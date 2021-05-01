@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- Webpage HTML document for Lab 03.
+  Author: Amir H Chinaei
+  For: EECS 1012, York University, Lassonde School of Engineering -->
+<html lang="En">
+<head>
+  <meta charset="UTF-8">
+  <title> EECS1012: Lab 3 - My Kit </title>
+  <!-- in Ex1, add a link tag here to connect it to the css file -->
+<link rel="stylesheet"  type="text/css" href="f.css"/>
+  
+  <!-- in Ex2, add a script tag here to connect it to the js file -->
+  <script src="f.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1 class="heading"> <b>My Computational Thinking Kit</b> </h1>
+	<nav>
+	  <!-- In Ex2, add an attribute onclick to button-->
+  	  <button onclick="p01Func()">Dosa</button>
+	  <!-- In Ex4, add an attribute onclick to button-->  
+	  <button onclick="p02Func()">Kabab</button>
+	  <button onclick="p03Func()">Idli</button>
+	  <button onclick="p04Func()">Chole-Bhature</button>
+	  <button  onclick="p05Func()">Pav-Bhaji</button>
+	 
+	</nav>
+  </header>
+  
+  <div id="problem" class="problem">
+  </div>
+  <div class="column1 design">
+    <!-- in Ex3, add an attribute onclick to the following input-->
+	<input onclick="checkUncheck1()" id="check1" type="checkbox"/> Information
+
+    <!-- in Ex5, add attributes onclick and ondblclick to the following img-->
+ 	<img onclick="zoomIn()" ondblclick="zoomOut()" id="design" src="null" alt="null"/>
+  </div>
+  <div class="column2 jsSolution">
+	<input onclick="checkUncheck2()" id="check2" type="checkbox"/> Images
+	 <img onclick="zoomIn()" ondblclick="zoomOut()" id="js" src="null" alt="null"/>
+  </div>
+  <div class="column3 otherSolution">
+	<input onclick="checkUncheck3()" id="check3" type="checkbox"/> Images
+	<img onclick="zoomIn()" ondblclick="zoomOut()" id="another" src="null" alt="null" />
+  </div>
+
+  <footer> Author of this web page: Aastha Puri </footer>
+</body>
+</html>
